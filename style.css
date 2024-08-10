@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #01fbf7;
+}
+.container{
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    /* height: 50px; */
+    margin:100px auto 0;
+    padding: 30px;
+    border-radius: 10px;
+}
+.container h1{
+    font-size: 25px;
+    color: #5292ce;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+.quiz{
+    padding: 20px 0px;
+}
+.quiz h2{
+    font-size: 16px;
+    color: #001e4d;
+    font-weight: 600;
+}
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: bolder;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn:hover:not([disabled]){  /*when button is disabled these css properties wont apply*/
+    background: #222;
+    color: #fff;
+}
+.btn:disabled{
+    cursor:no-drop;
+}
+#next-btn{
+    background: #01fbf7;
+    color: #121212;
+    font-weight: bolder;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0; /*top left-right bottom*/
+    border-radius: 4px;
+    cursor: pointer;
+    /* button is inline element */
+    /* display: block;  we want this thing to happen only when the question is answered so will make display none for now and then wehn any one of the answer is clicked then we will make this button visible*/
+    display: none;
+
+}
+.correct{
+    background-color: green;
+}
+.incorrect{
+    background-color: red;
+}
